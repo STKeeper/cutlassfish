@@ -120,6 +120,8 @@ In terms of key-value pair, the key of index is term ID. The record ID of which 
 
 The database system has two important parameters: mode and block size. Benchmark of record I/O time against these two parameters were performed. Each parameter set runs ten loops. In each loop, ten thousand records are inserted to a database with timing, then followed by ninety thousand other records insertion. At this point, ten thousand selections with random record ID are timed, and then the next loop continues. The record IDs for selection are chosen randomly from the ninety thousand records inserted in the same loop in ordered mode, but from zero to last inserted record ID in sequential mode.
 
+Following benchmarks were ran on a Mac Book Pro non-retina mid 2012. Yes, the one with a 500GB hard drive.
+
 ![Figure 5.1](https://raw.githubusercontent.com/gip0/cutlassfish/master/res/fig_5_1.png)  
 *Figure 5.1 10k Records Insertion Time v.s. Existing Records (Sequential Mode)*
 
